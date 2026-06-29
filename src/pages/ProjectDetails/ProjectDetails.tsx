@@ -19,7 +19,7 @@ const ProjectDetails = () => {
   if (isLoading) {
     return (
       <div className="flex min-h-screen items-center justify-center text-2xl text-[var(--portfolio-text)]">
-        {t("loadingProject")}
+        {t("loadingProjects")}
       </div>
     );
   }
