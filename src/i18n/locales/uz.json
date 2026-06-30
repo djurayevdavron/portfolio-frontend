@@ -65,5 +65,6 @@
   "sendMessage": "Xabar yuborish",
   "sending": "Yuborilmoqda...",
   "messageSent": "Xabar muvaffaqiyatli yuborildi!",
-  "messageFailed": "Xabar yuborishda xatolik yuz berdi."
+  "messageFailed": "Xabar yuborishda xatolik yuz berdi.",
+   "footer": "Barcha huquqlar himoyalangan."
 }
