@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <p className="text-sm text-[var(--portfolio-text-muted)]">
+    <footer className="py-6 text-center text-sm text-[var(--portfolio-text-muted)]">
       © {new Date().getFullYear()} Davron Jurayev. All rights reserved.
-    </p>
+    </footer>
   );
 };
 
