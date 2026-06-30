@@ -88,7 +88,7 @@ const Home = () => {
 
           <h1 className="mb-4 text-6xl font-bold">
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              Jurayev Davron
+              {t("name")}
             </span>
           </h1>
 
@@ -128,36 +128,56 @@ hover:shadow-[0_0_20px_rgba(147,51,234,0.3)]
             <Link
               to="/projects"
               className="
-    rounded-2xl
-    bg-gradient-to-r
-    from-violet-600
-    to-cyan-500
-    px-8 py-4
-    text-lg font-semibold text-white
-    shadow-[0_0_30px_rgba(147,51,234,.45)]
-    transition-all duration-300
-    hover:scale-105
-    hover:shadow-[0_0_50px_rgba(147,51,234,.65)]
-  "
+      rounded-2xl
+      bg-gradient-to-r
+      from-violet-600
+      to-cyan-500
+      px-8 py-4
+      text-lg font-semibold text-white
+      shadow-[0_0_30px_rgba(147,51,234,.45)]
+      transition-all duration-300
+      hover:scale-105
+      hover:shadow-[0_0_50px_rgba(147,51,234,.65)]
+    "
             >
               {t("viewProjects")}
             </Link>
 
             <a
-              href="/cv/Davron-Jurayev-CV.pdf"
+              href="/cv/Davron_Djurayev_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+      rounded-2xl
+      border border-violet-500/30
+      bg-[var(--portfolio-card)]
+      px-8 py-4
+      text-lg font-semibold
+      text-[var(--portfolio-text)]
+      backdrop-blur-xl
+      transition-all duration-300
+      hover:border-cyan-400
+      hover:bg-white/10
+    "
+            >
+              {t("viewCV")}
+            </a>
+
+            <a
+              href="/cv/Davron_Djurayev_CV.pdf"
               download
               className="
-    rounded-2xl
-    border border-violet-500/30
-    bg-[var(--portfolio-card)]
-    px-8 py-4
-    text-lg font-semibold
-    text-[var(--portfolio-text)]
-    backdrop-blur-xl
-    transition-all duration-300
-    hover:border-cyan-400
-    hover:bg-white/10
-  "
+      rounded-2xl
+      border border-violet-500/30
+      bg-[var(--portfolio-card)]
+      px-8 py-4
+      text-lg font-semibold
+      text-[var(--portfolio-text)]
+      backdrop-blur-xl
+      transition-all duration-300
+      hover:border-cyan-400
+      hover:bg-white/10
+    "
             >
               {t("downloadCV")}
             </a>
