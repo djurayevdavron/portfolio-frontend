@@ -13,7 +13,7 @@ const ThemeToggle = () => {
       onClick={() => dispatch(toggleTheme())}
       className="
         cursor-pointer
-        text-zinc-300
+        text-[var(--portfolio-text-muted)]
         transition-colors
         hover:text-violet-400
       "

@@ -155,7 +155,7 @@ hover:shadow-[0_0_35px_rgba(147,51,234,0.25)]
 "
             >
               <p className="text-sm font-semibold text-[var(--portfolio-text-muted)]">
-                2025 - Present
+                2025 - 2026
               </p>
 
               <h3 className="mt-2 text-2xl font-bold text-[var(--portfolio-text)] hover:border-green-500/50 hover:shadow-[0_0_35px_rgba(34,197,94,0.25)]">

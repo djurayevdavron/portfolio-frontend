@@ -187,7 +187,8 @@ hover:shadow-[0_0_20px_rgba(147,51,234,0.3)]
               href="https://github.com/djurayevdavron"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border border-[var(--portfolio-border)] bg-[var(--portfolio-card)] backdrop-blur-xl transition-all duration-300 hover:scale-110 hover:border-white/40 hover:shadow-[0_0_20px_rgba(255,255,255,0.25)]"
+              aria-label="GitHub Profile"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-[var(--portfolio-border)] bg-[var(--portfolio-card)] backdrop-blur-xl transition-all duration-300 hover:scale-110 hover:border-violet-500 hover:shadow-[0_0_20px_rgba(147,51,234,0.3)]"
             >
               <FaGithub size={22} className="text-[var(--portfolio-text)]" />
             </a>
@@ -196,7 +197,8 @@ hover:shadow-[0_0_20px_rgba(147,51,234,0.3)]
               href="https://linkedin.com/in/davrondjurayev"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-300 hover:scale-110 hover:border-[#0A66C2] hover:shadow-[0_0_20px_rgba(10,102,194,0.4)]"
+              aria-label="LinkedIn Profile"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-[var(--portfolio-border)] bg-[var(--portfolio-card)] backdrop-blur-xl transition-all duration-300 hover:scale-110 hover:border-[#0A66C2] hover:shadow-[0_0_20px_rgba(10,102,194,0.4)]"
             >
               <FaLinkedin size={22} className="text-[#0A66C2]" />
             </a>
@@ -205,14 +207,16 @@ hover:shadow-[0_0_20px_rgba(147,51,234,0.3)]
               href="https://t.me/RUNORAZI"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-300 hover:scale-110 hover:border-[#229ED9] hover:shadow-[0_0_20px_rgba(34,158,217,0.4)]"
+              aria-label="Telegram Profile"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-[var(--portfolio-border)] bg-[var(--portfolio-card)] backdrop-blur-xl transition-all duration-300 hover:scale-110 hover:border-[#229ED9] hover:shadow-[0_0_20px_rgba(34,158,217,0.4)]"
             >
               <FaTelegram size={22} className="text-[#229ED9]" />
             </a>
 
             <a
               href="mailto:djurayevdavron7@gmail.com"
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-300 hover:scale-110 hover:border-[#EA4335] hover:shadow-[0_0_20px_rgba(234,67,53,0.4)]"
+              aria-label="Send Email"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-[var(--portfolio-border)] bg-[var(--portfolio-card)] backdrop-blur-xl transition-all duration-300 hover:scale-110 hover:border-[#EA4335] hover:shadow-[0_0_20px_rgba(234,67,53,0.4)]"
             >
               <FaEnvelope size={22} className="text-[#EA4335]" />
             </a>

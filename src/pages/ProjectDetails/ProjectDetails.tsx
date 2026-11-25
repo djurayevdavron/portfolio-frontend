@@ -26,9 +26,19 @@ const ProjectDetails = () => {
 
   if (error || !project) {
     return (
-      <div className="flex min-h-screen items-center justify-center text-2xl text-red-500">
-        {t("projectNotFound")}
-      </div>
+      <section className="min-h-screen px-4 pt-28 pb-20">
+        <div className="mx-auto flex min-h-[40vh] max-w-xl flex-col items-center justify-center gap-6 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-red-400">
+            {t("projectNotFound")}
+          </h2>
+          <Link
+            to="/projects"
+            className="rounded-xl border border-cyan-500/30 px-6 py-3 font-medium text-cyan-400 transition-all hover:bg-cyan-500/10"
+          >
+            ← {t("back")}
+          </Link>
+        </div>
+      </section>
     );
   }
 

@@ -1,17 +1,22 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const NotFound = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="flex min-h-screen items-center justify-center px-6">
+    <section className="flex min-h-screen items-center justify-center px-6 bg-[var(--portfolio-bg)]">
       <div className="text-center">
         <h1 className="bg-gradient-to-r from-violet-500 to-cyan-500 bg-clip-text text-9xl font-extrabold text-transparent">
           404
         </h1>
 
-        <h2 className="mt-6 text-4xl font-bold text-white">Page Not Found</h2>
+        <h2 className="mt-6 text-4xl font-bold text-[var(--portfolio-text)]">
+          {t("pageNotFound")}
+        </h2>
 
-        <p className="mx-auto mt-6 max-w-lg text-lg text-zinc-400">
-          Sorry, the page you are looking for doesn't exist or has been moved.
+        <p className="mx-auto mt-6 max-w-lg text-lg text-[var(--portfolio-text-muted)]">
+          {t("pageNotFoundDescription")}
         </p>
 
         <Link
@@ -30,10 +35,11 @@ const NotFound = () => {
             hover:shadow-[0_0_30px_rgba(34,211,238,.4)]
           "
         >
-          Back to Home
+          {t("backHome")}
         </Link>
       </div>
     </section>
   );
 };
+
 export default NotFound;

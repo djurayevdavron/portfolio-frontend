@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { Menu } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 import {
   Sheet,
@@ -10,6 +11,7 @@ import {
 
 const MobileMenu = () => {
   const { t } = useTranslation();
+  const [open, setOpen] = useState(false);
 
   const navItems = [
     { name: t("home"), path: "/" },
@@ -20,9 +22,12 @@ const MobileMenu = () => {
   ];
 
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <button className="md:hidden text-[var(--portfolio-text)] hover:text-violet-400 transition-colors">
+        <button
+          aria-label="Toggle navigation menu"
+          className="md:hidden text-[var(--portfolio-text)] hover:text-violet-400 transition-colors"
+        >
           <Menu className="h-6 w-6" />
         </button>
       </SheetTrigger>
@@ -42,6 +47,7 @@ const MobileMenu = () => {
             <NavLink
               key={item.path}
               to={item.path}
+              onClick={() => setOpen(false)}
               className={({ isActive }) =>
                 `
                   text-lg

@@ -19,8 +19,7 @@
 
   "aboutText2": "2021-yildan buyon Veolia Energy Tashkent kompaniyasida Kompyuter tizimlari va tarmoqlari mutaxassisi sifatida ishlab kelmoqdaman va korporativ IT infratuzilmasi hamda tarmoq tizimlari bo'yicha amaliy tajriba orttirdim.",
 
-  "aboutText3": "Hozirda TATUda Software Engineering yo'nalishida tahsil olayotganim bilan birga Najot Ta'limdagi Web Practicum dasturi orqali zamonaviy web dasturlash ko'nikmalarimni rivojlantirmoqdaman.",
-
+  "aboutText3": "Hozirda TATUda Software Engineering yo'nalishida tahsil olayotganim bilan birga Najot Ta'limdagi Web Practicum dasturini muvaffaqiyatli tamomlab, zamonaviy Full Stack web dasturlash ko'nikmalarini egallaganman.",
   "aboutText4": "Mening birinchi mutaxassisligim Mechanical Engineering Technology bo'lib, ushbu yo'nalishda muhandis-texnolog bakalavr darajasini olganman.",
 
   "tstuDescription": "Islom Karimov nomidagi Toshkent Davlat Texnika Universitetida Mechanical Engineering Technology yo'nalishini tamomlab, muhandis-texnolog bakalavr darajasini oldim.",
@@ -29,13 +28,20 @@
 
   "tatuDescription": "Muhammad al-Xorazmiy nomidagi Toshkent Axborot Texnologiyalari Universitetida Software Engineering yo'nalishida tahsil olmoqdaman.",
 
-  "najotDescription": "Hozirda Najot Ta'lim markazining Web Practicum dasturida Full Stack Web Development yo'nalishida tahsil olmoqdaman.",
+  "najotDescription": "Najot Ta'lim markazining Web Practicum dasturida Full Stack Web Development yo'nalishini muvaffaqiyatli tamomlaganman.",
   "tstu": "Toshkent Davlat Texnika Universiteti",
   "veolia": "Veolia Energy Tashkent",
   "tatu": "Toshkent Axborot Texnologiyalari Universiteti",
   "najot": "Najot Ta'lim",
   "technologies": "Texnologiyalar",
   "tools": "Vositalar",
+  "skillsFrontend": "Frontend Dasturlash",
+  "skillsBackend": "Backend Dasturlash",
+  "skillsDatabase": "Ma'lumotlar Bazalari",
+  "skillsTools": "Dasturlash Vositalari",
+  "skillsEngineering": "Muhandislik Dasturlari",
+  "invalidEmail": "Iltimos, to'g'ri elektron pochta manzilini kiriting.",
+  "fillAllFields": "Iltimos, barcha maydonlarni to'ldiring.",
   "my": "Mening",
   "projectsDescription": "Zamonaviy texnologiyalar va eng yaxshi amaliyotlar yordamida yaratilgan real loyihalar va full stack ilovalar to'plami.",
   "github": "GitHub",

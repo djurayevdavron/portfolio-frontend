@@ -22,15 +22,29 @@ const Projects = () => {
     queryFn: getProjects,
   });
 
-  const filteredProjects = projects?.filter((project) =>
-    project.title.toLowerCase().includes(search.toLowerCase())
-  );
-
-  console.log(projects);
+  const filteredProjects = projects?.filter((project) => {
+    const q = search.toLowerCase();
+    const matchesTitle = project.title.toLowerCase().includes(q);
+    const matchesDesc = project.description.toLowerCase().includes(q);
+    const matchesTech = project.technologies?.some((tech) =>
+      tech.toLowerCase().includes(q)
+    );
+    return matchesTitle || matchesDesc || matchesTech;
+  });
 
   if (isLoading) return <ProjectsSkeleton />;
 
-  if (error) return <div>{t("errorProjects")}</div>;
+  if (error) {
+    return (
+      <section className="min-h-screen px-4 pt-28 pb-20">
+        <div className="mx-auto flex min-h-[40vh] max-w-xl flex-col items-center justify-center text-center">
+          <p className="text-xl font-semibold text-red-400">
+            {t("errorProjects")}
+          </p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="min-h-screen px-4 sm:px-6 lg:px-8 pt-28 pb-20">

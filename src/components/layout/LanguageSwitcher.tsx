@@ -14,7 +14,10 @@ const LanguageSwitcher = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <button className="cursor-pointer text-zinc-300 transition-colors hover:text-cyan-400">
+        <button
+          aria-label="Change language"
+          className="cursor-pointer text-[var(--portfolio-text-muted)] transition-colors hover:text-cyan-400"
+        >
           <Globe size={20} />
         </button>
       </DropdownMenuTrigger>

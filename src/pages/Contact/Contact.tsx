@@ -1,5 +1,6 @@
 import { Send, Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
+import axios from "axios";
 import { sendContactMessage } from "../../services/contact.service";
 import toast from "react-hot-toast";
 import { useTranslation } from "react-i18next";
@@ -12,6 +13,8 @@ const Contact = () => {
     subject: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
@@ -20,13 +23,35 @@ const Contact = () => {
       [e.target.name]: e.target.value,
     });
   };
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const trimmedName = formData.name.trim();
+    const trimmedEmail = formData.email.trim();
+    const trimmedSubject = formData.subject.trim();
+    const trimmedMessage = formData.message.trim();
+
+    if (!trimmedName || !trimmedEmail || !trimmedSubject || !trimmedMessage) {
+      toast.error(t("fillAllFields"));
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(trimmedEmail)) {
+      toast.error(t("invalidEmail"));
+      return;
+    }
 
     try {
       setLoading(true);
 
-      await sendContactMessage(formData);
+      await sendContactMessage({
+        name: trimmedName,
+        email: trimmedEmail,
+        subject: trimmedSubject,
+        message: trimmedMessage,
+      });
 
       toast.success(t("messageSent"));
       setFormData({
@@ -35,14 +60,16 @@ const Contact = () => {
         subject: "",
         message: "",
       });
-    } catch (error) {
-      toast.error(t("messageFailed"));
+    } catch (err: unknown) {
+      if (axios.isAxiosError(err) && err.response?.data?.message) {
+        toast.error(err.response.data.message);
+      } else {
+        toast.error(t("messageFailed"));
+      }
     } finally {
       setLoading(false);
     }
   };
-
-  const [loading, setLoading] = useState(false);
   return (
     <section className="min-h-screen px-6 py-20">
       <div className="mx-auto max-w-7xl">

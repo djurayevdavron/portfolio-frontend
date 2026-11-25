@@ -66,7 +66,7 @@ backdrop-blur-xl
                 ${
                   isActive
                     ? "text-violet-400"
-                    : "text-zinc-300 hover:text-cyan-400"
+                    : "text-[var(--portfolio-text-muted)] hover:text-cyan-400"
                 }
               `
               }

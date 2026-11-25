@@ -19,8 +19,7 @@
 
   "aboutText2": "С 2021 года я работаю специалистом по компьютерным системам и сетям в компании Veolia Energy Tashkent, получая практический опыт в области корпоративной IT-инфраструктуры и сетевых систем.",
 
-  "aboutText3": "В настоящее время я обучаюсь по направлению Software Engineering в ТУИТ и одновременно развиваю современные навыки веб-разработки в программе Web Practicum центра Najot Ta'lim.",
-
+  "aboutText3": "В настоящее время я обучаюсь по направлению Software Engineering в ТУИТ, а также успешно окончил программу Web Practicum в Najot Ta'lim, освоив современные навыки Full Stack веб-разработки.",
   "aboutText4": "Моё первое образование связано с Mechanical Engineering Technology, где я получил степень бакалавра инженера-технолога.",
 
   "tstuDescription": "Получил степень бакалавра инженера-технолога по направлению Mechanical Engineering Technology в Ташкентском государственном техническом университете имени Ислама Каримова.",
@@ -29,13 +28,20 @@
 
   "tatuDescription": "Обучаюсь по направлению Software Engineering в Ташкентском университете информационных технологий имени Мухаммада аль-Хорезми.",
 
-  "najotDescription": "В настоящее время обучаюсь Full Stack Web Development в программе Web Practicum учебного центра Najot Ta'lim.",
+  "najotDescription": "Успешно окончил программу Web Practicum по направлению Full Stack Web Development в учебном центре Najot Ta'lim.",
   "tstu": "Ташкентский Государственный Технический Университет",
   "veolia": "Veolia Energy Tashkent",
   "tatu": "Ташкентский Университет Информационных Технологий",
   "najot": "Najot Ta'lim",
   "technologies": "Технологии",
   "tools": "Инструменты",
+  "skillsFrontend": "Frontend Разработка",
+  "skillsBackend": "Backend Разработка",
+  "skillsDatabase": "Базы Данных",
+  "skillsTools": "Инструменты Разработки",
+  "skillsEngineering": "Инженерное ПО",
+  "invalidEmail": "Пожалуйста, введите корректный адрес электронной почты.",
+  "fillAllFields": "Пожалуйста, заполните все поля.",
   "my": "Мои",
   "projectsDescription": "Коллекция реальных приложений и full stack проектов, созданных с использованием современных технологий и лучших практик.",
   "github": "GitHub",
